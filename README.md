@@ -3,6 +3,7 @@
 [MailShake](https://github.com/jpscaletti/MailShake) mailer for sending email
 via [RQ](http://python-rq.org/).
 
+[![Build Status](https://travis-ci.org/RobbieClarken/MailShake-RQMailer.svg?branch=master)](https://travis-ci.org/RobbieClarken/MailShake-RQMailer)
 
 ## Usage
 
