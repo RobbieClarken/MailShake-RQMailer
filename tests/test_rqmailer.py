@@ -19,3 +19,10 @@ def test_send_enques_a_message(mailer):
     mailer.send(subject='Hi!')
     (_, queued_message), _ = mailer.queue.enqueue.call_args
     assert queued_message.subject == 'Hi!'
+
+
+def test_can_set_sender_func():
+    queue = MagicMock()
+    mailer = RQMailer(queue, sender_func='module.function')
+    mailer.send_messages('message')
+    assert queue.enqueue.call_args == call('module.function', 'message')
