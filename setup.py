@@ -9,6 +9,7 @@ setup(
     version=version,
     author='Robbie Clarken',
     author_email='robbie.clarken@gmail.com',
+    license='MIT',
     url='https://github.com/RobbieClarken/MailShake-RQMailer',
     packages=['rqmailer'],
     install_requires=[
